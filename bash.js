@@ -26,6 +26,14 @@ process.stdout.write('System Calibrating... Please enter phrase: > ');
 process.stdin.on('data', (data) => {
     const cmd = data.toString().trim(); // remove the newline
 
-    process.stdout.write('System Calibrated... You typed: ' + cmd);
+    // process.stdout.write('System Calibrated... You typed: ' + cmd);
+    process.stdout.write(cmd + ' C:\Users\LXS20media\Documents\Fullstack Coding Projects\Course_Work\node-shell');
+    // C:\Users\LXS20media\Documents\Fullstack Coding Projects\Course_Work\node-shell
     process.stdout.write('\nCalibratd System... prompt > ');
-})
+});
+
+// process.stdin.on('data', (pwd) => {
+//     const cmd = data.toString().trim(); // remove the newline
+
+//     process.stdout.write('/Users/you/dev/node-shell' + cmd);
+// });
